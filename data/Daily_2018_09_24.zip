@@ -1,0 +1,2377 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="/cht/resources/front/cht/images/favicon.ico" />
+  <meta property="og:image" content="http://www.taifex.com.tw/cht/images/fb_logo.jpg" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>臺灣期貨交易所</title>
+  
+  
+  <link rel="stylesheet" type="text/css" href="/cht/resources/front/cht/css/global.css" />
+  	<link rel="stylesheet" type="text/css" href="/cht/resources/front/cht/css/content.css" />
+  	<link rel="stylesheet" type="text/css" href="/cht/resources/front/cht/css/index.css" />  
+  	<link rel="stylesheet" type="text/css" href="/cht/resources/front/cht/css/sitemap.css" />
+  	<link rel="stylesheet" type="text/css" href="/cht/resources/front/cht/css/jquery-ui.css" />
+  	<link rel="stylesheet" type="text/css" href="/cht/resources/front/js/slick/slick.css" />
+  	<link rel="stylesheet" type="text/css" href="/cht/resources/front/js/slick/slick-theme.css" />
+  <script src="/cht/resources/front/js/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="/cht/resources/front/js/jquery-ui-1.10.4.custom.js" type="text/javascript" ></script>  
+  <script src="/cht/resources/front/js/jquery.ui.datepicker-zh-TW.js" type="text/javascript" ></script>    
+  <script src="/cht/resources/front/js/jquery.placeholder.js" type="text/javascript"></script>
+  <script src="/cht/resources/front/js/jquery.ifixpng.js" type="text/javascript" ></script>
+  <script src="/cht/resources/front/js/common.js" type="text/javascript"></script>
+  <script src="/cht/resources/front/js/chart/Chart.min.js" type="text/javascript" ></script>    
+  <script src="/cht/resources/front/js/chart/chartjs-plugin-annotation.min.js" type="text/javascript" ></script>  
+  <script src="/cht/resources/front/js/slick/slick.min.js" type="text/javascript" ></script>
+  
+
+
+  
+<style>
+.red {
+	color: red;
+}
+.error {
+	color: red;
+}
+</style>
+
+
+ 
+
+
+  <script type="text/javascript">
+
+	var mobileCheck = mobilecheck();
+	var m ='1';
+	if (mobileCheck && m!='0') {
+		location.href = '/mCht/mIndex';
+	}
+  
+  </script>
+  </head>
+<body>
+  
+  <div id="btnTop" name="btnTop" class="bt_top" style="z-index: 10"></div>
+  <div class="wrapper">  
+  	<input id="api_url" type="hidden" value="/cht/quotesApi/getQuotes?" />
+	<input id="product_type" type="hidden" value="1" />
+	<input id="major_type" type="hidden" value="1" />
+	<input id="major_data_type" type="hidden" value="1" /> 
+  	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+
+<!--Header Start-->
+    <div class="header clearfix">
+      <h1 class="logo" title="網站名稱">
+      	
+      	<a href="/cht/index" title="回首頁"></a>
+       	</h1>
+		<div class="ann1">
+								<div class="txt"></div>
+							</div>	
+						<div class="header_nav01">
+        <ul>
+          <li>
+          	<a href='/enl/eIndex'>English</a> /
+          	</li>
+          <li>
+          	<a href="/cht/sitemap">網站導覽</a> / 
+          	</li>
+          <li>
+          	<a href="/cht/index">回首頁</a> /
+          	</li>
+          <li>
+          	<a href="http://epaper.taifex.com.tw/"  target="_blank" >電子報訂閱</a>
+          	</li>
+        </ul>
+      </div>
+      <div class="search">
+       <form name="myHeaderform" id="myHeaderform" >
+        <input name="pstring" id="pstring" type="text" onKeyDown="handleKeydown();" 
+            
+        	placeholder="請輸入查詢字詞"
+        
+        />
+
+						<INPUT TYPE=HIDDEN NAME=h VALUE="0">
+                    	<INPUT TYPE=HIDDEN NAME=l VALUE="0">
+                    	<INPUT TYPE=HIDDEN NAME=o VALUE="4">
+                    	<INPUT TYPE=HIDDEN NAME=a VALUE="">
+                    	<INPUT TYPE=HIDDEN NAME=f VALUE="0">
+                    	<INPUT TYPE=HIDDEN NAME=t VALUE="0">
+                    	<INPUT TYPE=HIDDEN NAME=s VALUE="2">
+	
+                    	<INPUT TYPE=HIDDEN NAME=q VALUE="">
+                    	<INPUT TYPE=HIDDEN NAME=e VALUE="">
+                    	<INPUT TYPE=HIDDEN NAME=n VALUE="">
+	
+                    	<INPUT TYPE=HIDDEN NAME=fileaut VALUE="">
+                    	<INPUT TYPE=HIDDEN NAME=filename VALUE="">
+                    	<INPUT TYPE=HIDDEN NAME=filetype VALUE="">
+	
+                    	<INPUT TYPE=HIDDEN NAME=rel_start VALUE="1">
+                    	<INPUT TYPE=HIDDEN NAME=rel_num VALUE="10">
+                    	<INPUT TYPE=HIDDEN NAME=sim_start VALUE="1">
+                    	<INPUT TYPE=HIDDEN NAME=sim_num VALUE="10">
+	
+                    	<INPUT TYPE=HIDDEN NAME=property VALUE="">
+                    	<INPUT TYPE=HIDDEN NAME=property VALUE="">
+        
+         <a href="javascript:searchgosubmit();" class="btn_search"></a>
+         </form>  
+         </div>
+      <div class="facebook">
+      	<a href="https://www.facebook.com/taifexsocial" class="fb1" target="_blank" title='臺灣期貨交易所 Facebook'></a> 
+		<a href="https://plus.google.com/111846617247693181728" class="gg1" target="_blank" title='臺灣期貨交易所 Google+'></a> 
+		<a href="https://itunes.apple.com/tw/app/qi-jiao-suo/id686377410?l=zh&mt=8" class="ios" target="_blank" title='下載iOS APP'></a> 
+		<a href="https://play.google.com/store/apps/details?id=com.mitake.taifex.impl&hl=zh_TW" class="android" target="_blank" title='下載Android APP'></a> 
+		<a href="/cht/11/RSS0" class="rss" target="_blank" title='RSS訂閱'></a></div>
+      <div class="header_nav02">
+        <ul>
+          <li class="nav01" onmouseover="javascript:mastermenu('01')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/1/welcome"></a>
+	             <ul id="mastermenu_01" style="left:0px;width:140px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/1/welcome"/>首長歡迎詞</a></li>		                	 	 
+		                	 <li><a  href="/cht/1/originOfEstablish"/>沿革、宗旨、展望</a></li>		                	 	 
+		                	 <li><a  href="/cht/1/orgPattern"/>組織型態</a></li>		                	 	 
+		                	 <li><a  href="/cht/1/orgStructure"/>組織結構</a></li>		                	 	 
+		                	 <li><a  href="/cht/1/corpLogo"/>企業識別標誌</a></li>		                	 	 
+		                	 <li><a target="_blank" href="http://taifex.learn.hinet.net/about.php?lang=1"/>影音介紹</a></li>
+		                	 <li><a  href="/cht/1/annualRep"/>年報</a></li>		                	 	 
+		                	 <li><a  href="/cht/1/international"/>國際合作專區</a></li>		                	 	 
+		                	 <li><a  href="/cht/1/historyOfTaifex"/>iTaifex博物館</a></li>		                	 	 
+		                	 <li><a  href="/cht/1/map"/>地圖</a></li>		                	 	 
+		                	 <li><a  href="/cht/1/contactTaifex"/>聯絡我們</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav02" onmouseover="javascript:mastermenu('02')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/2/products"></a>
+	             <ul id="mastermenu_02" style="left:0px;width:126px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/2/tX"/>股價指數期貨類</a></li>		                	 	 
+		                	 <li><a  href="/cht/2/sTF"/>個股期貨類</a></li>		                	 	 
+		                	 <li><a  href="/cht/2/gBF"/>利率期貨類</a></li>		                	 	 
+		                	 <li><a  href="/cht/2/tXO"/>股價指數選擇權類</a></li>		                	 	 
+		                	 <li><a  href="/cht/2/sSO"/>個股選擇權類</a></li>		                	 	 
+		                	 <li><a  href="/cht/2/gDF"/>商品期貨與選擇權類</a></li>		                	 	 
+		                	 <li><a  href="/cht/2/rTF"/>匯率期貨類</a></li>		                	 	 
+		                	 <li><a  href="/cht/2/rTO"/>匯率選擇權類</a></li>		                	 	 
+		                	 <li><a  href="/cht/2/developPlan"/>規劃中商品資訊</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav03" onmouseover="javascript:mastermenu('03')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/3/totalTableDate"></a>
+	             <ul id="mastermenu_03" style="left:0px;width:224px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/3/futDailyMarketReport"/>交易資訊</a></li>		                	 	 
+		                	 <li><a  href="/cht/3/totalTableDate"/>三大法人</a></li>		                	 	 
+		                	 <li><a  href="/cht/3/largeTraderFutQry"/>大額交易人未沖銷部位結構</a></li>		                	 	 
+		                	 <li><a  href="/cht/3/dailyFXRate"/>每日外幣參考匯率查詢</a></li>		                	 	 
+		                	 <li><a  href="/cht/3/hisAppForm"/>交易歷史資料申請</a></li>		                	 	 
+		                	 <li><a  href="/cht/3/dlFutDailyMarketView"/>資料下載專區</a></li>		                	 	 
+		                	 <li><a  href="/cht/3/inforVendor"/>資訊廠商</a></li>		                	 	 
+		                	 <li><a target="_blank" href="http://info512.taifex.com.tw"/>台灣期貨交易所行情資訊網站</a></li>
+		                	 <li><a  href="/cht/3/tradeHalt"/>訊息面暫停交易之股票期貨及選擇權</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav04" onmouseover="javascript:mastermenu('04')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/4/marketFramework"></a>
+	             <ul id="mastermenu_04" style="left:0px;width:196px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/4/marketFramework"/>交易制度</a></li>		                	 	 
+		                	 <li><a  href="/cht/4/feeSchedules"/>費率表</a></li>		                	 	 
+		                	 <li><a  href="/cht/4/tradingSystem"/>電子交易系統</a></li>		                	 	 
+		                	 <li><a  href="/cht/4/traderPL"/>部位限制</a></li>		                	 	 
+		                	 <li><a  href="/cht/4/fCMList"/>期貨商名冊</a></li>		                	 	 
+		                	 <li><a  href="/cht/4/calendar"/>行事曆</a></li>		                	 	 
+		                	 <li><a  href="/cht/4/contractAdj"/>股票期貨/選擇權契約相關資訊</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav05" onmouseover="javascript:mastermenu('05')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/5/clearing"></a>
+	             <ul id="mastermenu_05" style="left:0px;width:280px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/5/clrProcess"/>結算制度</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/indexMarging"/>保證金</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/safeGuardSystem"/>財務安全保衛系統</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/cMCriteria"/>結算會員資格標準</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/cMList2"/>結算會員名冊</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/positionManagement"/>部位管理</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/futIndxFSP"/>最後結算價一覽表</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/futIndxPosSettled"/>到期契約履約交割說明</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/settledBond"/>可交割債券轉換因子表</a></li>		                	 	 
+		                	 <li><a  href="/cht/4/feeSchedules?menuid1=05"/>費率表</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/productsExemptedAH"/>盤後交易時段指定豁免及非豁免代為沖銷商品</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav06" onmouseover="javascript:mastermenu('06')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/6/infor"></a>
+	             <ul id="mastermenu_06" style="left:0px;width:98px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/6/infor"/>最新修訂資訊</a></li>		                	 	 
+		                	 <li><a  href="/cht/6/taifexRule"/>本公司市場規章</a></li>		                	 	 
+		                	 <li><a target="_blank" href="http://www.selaw.com.tw/"/>法令查詢</a></li>
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav07" onmouseover="javascript:mastermenu('07')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/7/annualTrading"></a>
+	             <ul id="mastermenu_07" style="left:0px;width:210px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/7/dailyFCM"/>期貨商交易量日報表</a></li>		                	 	 
+		                	 <li><a  href="/cht/7/weeklyFCM"/>期貨商交易量週報表</a></li>		                	 	 
+		                	 <li><a  href="/cht/7/monthlyFCM"/>期貨商交易量月報表</a></li>		                	 	 
+		                	 <li><a  href="/cht/7/yearlyFCM"/>期貨商交易量年報表</a></li>		                	 	 
+		                	 <li><a  href="/cht/7/annualTrading"/>各商品年成交量統計表</a></li>		                	 	 
+		                	 <li><a  href="/cht/7/marketParticipant"/>市場參與者統計</a></li>		                	 	 
+		                	 <li><a  href="/cht/7/tradingVolume"/>各類交易人各商品交易量統計表</a></li>		                	 	 
+		                	 <li><a  href="/cht/7/brokerAndDealer"/>經紀、自營商交易量統計表</a></li>		                	 	 
+		                	 <li><a  href="/cht/7/tradingParticipant"/>各類交易人交易量統計表</a></li>		                	 	 
+		                	 <li><a target="_blank" href="/cht/../file/taifex/CHINESE/7/trade_volume.xls"/>前一月份各商品每日交易量統計表 </a></li>		                	 	 
+		                	 <li><a  href="/cht/7/vixMinNew"/>臺指選擇權波動率指數下載</a></li>		                	 	 
+		                	 <li><a target="_blank" href="http://info512.taifex.com.tw/Future/VIXQuote_Norl.aspx"/>臺指選擇權波動率指數即時行情</a></li>
+		                	 <li><a  href="/cht/7/dailyIndOptChgData"/>加值資料集</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav08" onmouseover="javascript:mastermenu('08')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/8/netValuePerShare"></a>
+	             <ul id="mastermenu_08" style="left:0px;width:336px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/8/netValuePerShare"/>期貨商財務資料</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/settlementForms"/>交易結算申請作業各項表單</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/financeAuditingForms"/>財務稽核申報作業各項表單</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/futAccountingTemplate"/>期貨商會計制度範本</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/fcmInnerControl"/>期貨商內控標準規範</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/iBInnerControlStandard"/>IB內控標準規範</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/futInfoStation"/>期貨商公開資訊觀測站</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/historicalViolationCase"/>違規處置歷史案例</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/mediaUploadFormat"/>媒體申報系統上傳格式</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/spanRiskParameterFile"/>期貨商SPAN相關檔案下載</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/participationReq"/>期貨業設置條件一覽表</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/usReg"/>期貨商向美國投資人推廣本公司期貨商品應注意之事項</a></li>		                	 	 
+		                	 <li><a  href="/cht/8/techDocs"/>電腦技術文件下載區</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav09" onmouseover="javascript:mastermenu('09')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/9/futuresQA"></a>
+	             <ul id="mastermenu_09" style="left:0px;width:294px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a target="_blank" href="https://investor.taifex.com.tw"/>交易人個人資料查詢</a></li>
+		                	 <li><a  href="/cht/9/queryPosition"/>交易人部位查詢功能</a></li>		                	 	 
+		                	 <li><a  href="/cht/9/futuresQA"/>問題與解答</a></li>		                	 	 
+		                	 <li><a  href="/cht/9/marketPolicy"/>常見市場規章案例解說專欄</a></li>		                	 	 
+		                	 <li><a  href="/cht/9/properNoun"/>專有名詞</a></li>		                	 	 
+		                	 <li><a  href="/cht/9/trainingLesson"/>教育宣導</a></li>		                	 	 
+		                	 <li><a  href="/cht/9/calOptPrice"/>選擇權理論價格計算</a></li>		                	 	 
+		                	 <li><a  href="/cht/9/futDisputesType"/>期貨交易糾紛類型</a></li>		                	 	 
+		                	 <li><a target="_blank" href="/cht/../file/taifex/CHINESE/9/法人法規說明與介紹.doc"/>法人機構參與期貨市場法規之說明與介紹</a></li>		                	 	 
+		                	 <li><a  href="/cht/9/internetSecurity"/>期貨投資人資通安全維護手冊</a></li>		                	 	 
+		                	 <li><a  href="/cht/9/appForms"/>期貨交易教育中心相關申請表單</a></li>		                	 	 
+		                	 <li><a target="_blank" href="/cht/../file/taifex/CHINESE/9/資料查詢申請表.pdf"/>期貨商、交易人資料查詢申請表</a></li>		                	 	 
+		                	 <li><a  href="/cht/../file/taifex/CHINESE/9/期貨商得受託從事期貨交易之國外期貨交易契約.xls"/>期貨商得受託從事期貨交易之國外期貨交易契約</a></li>		                	 	 
+		                	 <li><a target="_blank" href="/cht/../file/taifex/CHINESE/9/期交所各部門對外窗口名單.doc"/>期貨市場服務中心</a></li>		                	 	 
+		                	 <li><a target="_blank" href="http://taifex.learn.hinet.net/"/>期貨影音知識網</a></li>
+		                	 <li><a target="_blank" href="http://taifex.learn.hinet.net/elearn/"/>期貨與選擇權數位學習網</a></li>
+		                	 <li><a target="_blank" href="/cht/../file/taifex/CHINESE/9/臺灣期貨交易所金融市場基本架構資訊揭露報告.pdf"/>臺灣期貨交易所金融市場基本架構資訊揭露報告</a></li>		                	 	 
+		                	 <li><a  href="/cht/10/promotePamphlet1?menuid1=09"/>宣導手冊 </a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav10" onmouseover="javascript:mastermenu('10')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/10/annualRep"></a>
+	             <ul id="mastermenu_10" style="left:0px;width:112px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/10/annualRep"/>年報</a></li>		                	 	 
+		                	 <li><a  href="/cht/10/taifexBimonthly"/>臺灣期貨雙月刊</a></li>		                	 	 
+		                	 <li><a  href="/cht/10/taifexMonthly"/>歷史定期性刊物</a></li>		                	 	 
+		                	 <li><a  href="/cht/10/promotePamphlet1"/>宣導手冊</a></li>		                	 	 
+		                	 <li><a  href="/cht/10/researchInfo"/>研究報告摘要</a></li>		                	 	 
+		                	 <li><a  href="/cht/10/aboutJournal"/>期貨與選擇權學刊</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav11" onmouseover="javascript:mastermenu('11')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/11/announcement"></a>
+	             <ul id="mastermenu_11" style="left:0px;width:168px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/11/announcement"/>公告</a></li>		                	 	 
+		                	 <li><a  href="/cht/11/pressRelease"/>新聞稿</a></li>		                	 	 
+		                	 <li><a  href="/cht/11/adjustContract"/>股票期貨/選擇權契約調整</a></li>		                	 	 
+		                	 <li><a  href="/cht/11/hisNews"/>歷史資料區</a></li>		                	 	 
+		                	 <li><a  href="/cht/11/dailyMarketInfo"/>每日市場資訊</a></li>		                	 	 
+		                	 <li><a  href="/cht/11/RSS0"/>RSS資訊訂閱服務</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav12" onmouseover="javascript:mastermenu('12')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/12/fP1"></a>
+	             <ul id="mastermenu_12" style="left:-48px;width:196px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/12/fP1"/>參與交易方式</a></li>		                	 	 
+		                	 <li><a  href="/cht/2/tX?menuid1=12"/>商品面</a></li>		                	 	 
+		                	 <li><a  href="/cht/4/traderPL?menuid1=12"/>制度面</a></li>		                	 	 
+		                	 <li><a  href="/cht/5/cMList?menuid1=12"/>期貨商暨結算會員資格一覽表</a></li>		                	 	 
+		                	 <li><a  href="/cht/4/fCMList?menuid1=12"/>各式名冊</a></li>		                	 	 
+		                	 <li><a  href="/cht/10/promotePamphlet1?menuid1=12"/>宣導手冊</a></li>		                	 	 
+		                	 <li><a  href="/cht/12/qa"/>問題與解答</a></li>		                	 	 
+		                	 <li><a  href="/cht/12/fP2"/>外資進入臺灣期貨市場作業說明</a></li>		                	 	 
+		                	 <li><a target="_blank" href="/cht/../file/taifex/CHINESE/12/LEI.pdf"/>法人機構識別碼LEI</a></li>		                	 	 
+		                	 <li><a  href="/cht/1/contactTaifex?menuid1=12"/>聯絡我們</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          <li class="nav13" onmouseover="javascript:mastermenu('13')" onmouseout="javascript:mastermenu('0');">
+             <a  href="/cht/13/authorityLink"></a>
+	             <ul id="mastermenu_13" style="left:-36px;width:112px;display:none;
+          	 	">
+          	 	
+          		
+        			<li><a  href="/cht/13/authorityLink"/>主管機關</a></li>		                	 	 
+		                	 <li><a  href="/cht/13/peerUnitLink"/>證券期貨周邊單位</a></li>		                	 	 
+		                	 <li><a  href="/cht/13/foreignExchangeLink"/>國外交易所</a></li>		                	 	 
+		                	 <li><a  href="/cht/13/futBusinessLink"/>期貨商</a></li>		                	 	 
+		                	 <li><a  href="/cht/13/memberLink"/>結算會員</a></li>		                	 	 
+		                	 <li><a  href="/cht/13/internationalFinanceLink"/>國際財金網站</a></li>		                	 	 
+		                	 <li><a  href="/cht/13/realTimeInfoLink"/>即時交易資訊</a></li>		                	 	 
+		                	 </ul>
+            
+         	</li> 
+          </ul>
+      </div>
+    </div>
+    		<style type="text/css">
+        a img {
+                border: none;
+        }
+        #headerbanner_pic {
+                position: relative;
+                width: 1000px;
+                height: 154px;
+                border: 0px solid #ccc;
+        }
+        #headerbanner_pic a.ad {
+                position: absolute;   /* 讓圖片疊在一起 */
+                z-index:8;
+        }
+        #headerbanner_pic .control {
+                position: absolute;
+                right: 4px;
+                bottom: 1px;
+                z-index:99;
+        }
+        #headerbanner_pic .control a {
+                display: inline-block;
+                margin: 0 3px;
+                
+                width:12px; height:20px;
+				color:#fff;
+				font-size:1 px;
+				text-align:center;
+
+        }
+        #headerbanner_pic .control a.on {
+
+				color:#F90;
+        }
+        #headerbanner_pic .select{ background:url(/cht/resources/front/cht/resources/images/vision_bottom.png) no-repeat; height:20px; width:1000px; position:absolute; top:135px; z-index:50;}
+</style>  
+<script type="text/javascript">
+	$(function(){
+		var $block = $('#headerbanner_pic'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 2000,	// 淡出的速度
+			fadeInSpeed = 3000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2000;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#" id='+(i + 1)+'><font size=4>●</font></a>';
+		}
+		var $controlA = $('#headerbanner_pic').append($('<div class="select fixpng"><div class="control">' + str + '</div></div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).attr('id') * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+		
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer_header = setTimeout(autoClick, speed);
+	});
+</script>
+<div id="brower_others" style="display:none">    
+    <div id="headerbanner_pic" class="vision">    
+    	<a  class="ad"  target="_blank"   
+			>
+    			<img border="0" width="1000" height="154" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/header/BRT_round_banner.jpg" />
+    		</a>
+    	<a  class="ad"  target="_blank"   
+			>
+    			<img border="0" width="1000" height="154" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/header/newthird_Banner_1000x154.jpg" />
+    		</a>
+    	<a  class="ad"  target="_blank"   
+			>
+    			<img border="0" width="1000" height="154" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/header/XAF_XBF.jpg" />
+    		</a>
+    	<a  class="ad"  target="_blank"   
+			>
+    			<img border="0" width="1000" height="154" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/header/dynamicPriceBanding_banner.jpg" />
+    		</a>
+    	<a  class="ad"  target="_blank"   
+			>
+    			<img border="0" width="1000" height="154" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/header/af_b_banner.jpg" />
+    		</a>
+    	<a  class="ad"  target="_blank"   
+			>
+    			<img border="0" width="1000" height="154" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/header/SPF_UDF_1000x152.jpg" />
+    		</a>
+    	<a  class="ad"  target="_blank"   
+			>
+    			<img border="0" width="1000" height="154" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/header/i5f.jpg" />
+    		</a>
+    	</div>
+</div>
+<script type="text/javascript">
+	document.getElementById("brower_others").style.display = "block";
+</script >
+
+<!--Header End-->
+    <script type="text/javascript">
+    	document.getElementById("brower_others").style.display = "block";
+    </script >
+<!--
+
+//-->
+</script>
+ <script type="text/javascript">
+	var  resourcesPath = '/cht/resources//front/cht/';
+  $(function () {
+
+      //mdbs add:go to top
+      $("#btnTop").click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 'slow');
+      });
+
+				   $('input').placeholder();	 
+				   $("#pstring").autocomplete({
+					source: "", 
+					autoFocus: true
+					 });  
+					$("#pstring").keyup(function() {
+					   var keyword=$("#pstring").val();
+					   var code =keyword.charCodeAt();
+					   if($.trim(keyword)!= "" && code !=12288){
+						crossDomainAjax("http://www.taifex.com.tw/TS50Search/wildcard.ashx?term="+encodeURIComponent(keyword),function (data) {
+							$("#pstring").autocomplete({
+								source: data, //搜尋網站的網址
+								autoFocus: true
+							});  
+						});
+						}
+				  });  
+
+              var $data = "";
+              $.ajax({
+                  url: "http://www.taifex.com.tw/TS50Search/listhotkeyword.ashx",
+                  type: 'get',
+                  datatype: 'jsonp',
+                  jsonp: 'callback',
+                  jsonpCallback: 'jsonpCallback',
+                  success: function (data) {
+                      $data = JSON.parse(jsonpCallback(data));
+                      var count = 1;
+                      for (var i in $data) {
+						  var webLanguage = 'c';
+						  if (webLanguage =='c') {
+							  setHotChtKeyword($data[i]);  
+						  } else if (webLanguage =='e') {
+							  setHotEngKeyword($data[i]);
+						  }
+                          
+                          if (count < 5) {
+                              $('.hk-list').append("、");
+                          }
+                          count++;
+                      }
+
+                  }
+              });
+     });
+		function crossDomainAjax (url, successCallback) {
+
+					// IE8 & 9 only Cross domain JSON GET request
+					if ('XDomainRequest' in window && window.XDomainRequest !== null) {
+
+						var xdr = new XDomainRequest(); // Use Microsoft XDR
+						xdr.open('get', url);
+						xdr.onload = function () {
+							var dom  = new ActiveXObject('Microsoft.XMLDOM'),
+								JSON = $.parseJSON(xdr.responseText);
+
+							dom.async = false;
+
+							if (JSON == null || typeof (JSON) == 'undefined') {
+								JSON = $.parseJSON(data.firstChild.textContent);
+							}
+
+							successCallback(JSON); // internal function
+						};
+
+						xdr.onerror = function() {
+							_result = false;  
+						};
+
+						xdr.send();
+					} 
+
+					// IE7 and lower can't do cross domain
+					else if (navigator.userAgent.indexOf('MSIE') != -1 &&
+							parseInt(navigator.userAgent.match(/MSIE ([\d.]+)/)[1], 10) < 8) {
+					  return false;
+					}    
+
+					// Do normal jQuery AJAX for everything else          
+					else {
+						$.ajax({
+							url: url,
+							cache: false,
+							dataType: 'json',
+							type: 'GET',
+							async: false, // must be set to false
+							success: function (data, success) {
+								successCallback(data);
+							}
+						});
+					}
+				}			
+          function jsonpCallback(data) {
+              return data;
+          }
+          function setHotChtKeyword(keyword) {
+              var a = document.createElement('a');
+              //var li = document.createElement('li');
+              a.setAttribute('href', 'www.taifex.com.tw/TS50Search/SearchIndex.aspx?Keyword=' + keyword+'&languageType=chinese&FileType=htm,doc,xls,ppt,pdf'); //若英文網站多加languageType=eng
+              a.setAttribute('title', keyword);
+              a.setAttribute('class', 'blue-link');
+              a.setAttribute('target', '_blank');
+              a.innerHTML = keyword;
+              $('.hk-list').append(a); //.append(li)
+          }
+
+          function setHotEngKeyword(keyword) {
+              var a = document.createElement('a');
+              //var li = document.createElement('li');
+              a.setAttribute('href', 'www.taifex.com.tw/TS50Search/SearchIndex.aspx?Keyword=' + keyword+'&languageType=eng&FileType=htm,doc,xls,ppt,pdf'); //若英文網站多加languageType=eng
+              a.setAttribute('title', keyword);
+              a.setAttribute('class', 'blue-link');
+              a.setAttribute('target', '_blank');
+              a.innerHTML = keyword;
+              $('.hk-list').append(a); //.append(li)
+          }
+			
+			
+			
+			
+			
+			
+			
+	function handleKeydown(){
+	if (window.event.keyCode == 13) // 表示按下 enter
+	{
+	window.event.returnValue = false; // 取消 submit()
+	searchgosubmit();
+	}
+
+	}
+
+		function searchgosubmit(){
+		
+			if (document.getElementById("pstring").value==""){
+				alert("請輸入搜尋字串!");
+			}else{
+				var webLanguage = 'c';
+
+		//var url='http://www.taifex.com.tw/TS50Search/SearchResult.asp?KW='+escape(document.myHeaderform.pstring.value)+'&DB=Taifex_new_C&ST=basic&RC=default&SBV=&S_LOCALE=Wording_TW';
+		 
+		var url='http://www.taifex.com.tw/TS50Search/SearchIndex.aspx?Keyword='+escape(document.myHeaderform.pstring.value)+'&languageType=chinese&FileType=htm,doc,xls,ppt,pdf&SearchType=Fuzzy';
+		if (webLanguage =='e'){
+			var url='http://www.taifex.com.tw/TS50Search/SearchIndex.aspx?Keyword='+escape(document.myHeaderform.pstring.value)+'&languageType=eng&FileType=htm,doc,xls,ppt,pdf&SearchType=Fuzzy';
+		} 
+		window.open(url,'_blank');
+		return;
+			}
+		}
+		/* topMenu */
+		function mastermenu(id){
+			var i;
+			var cheing = 'c';
+			if (cheing =='c') {
+				for (i=1;i<=13;i++) {
+					var str = ''+i;
+					if (str.length <=1){
+						str = '0'+str;
+					}
+					if (i == id) {
+						document.getElementById('mastermenu_' + str).style.display='block';
+					} else {
+						document.getElementById('mastermenu_' + str).style.display='none';
+					}
+				}
+			} else if (cheing =='e') {
+				for (i=1;i<=14;i++) {
+					var str = ''+i;
+					if (str.length <=1){
+						str = '0'+str;
+					}
+					if (i == id) {
+						document.getElementById('mastermenu_' + str).style.display='block';
+					} else {
+						document.getElementById('mastermenu_' + str).style.display='none';
+					}
+				}	
+			}
+		}
+
+  
+  </script> 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+<script src="/cht/resources/front/cht/js/showData.js" type="text/javascript"></script>
+
+<!--Container Start-->
+    <div class="container clearfix index">
+      <!--SidebarLeft Start-->
+      <div class="sidebar_left">
+        <div class="box news">
+          <div class="hd"><a href="/cht/11/announcement" target="_blank" class="more">More</a></div>
+          <div class="bd">
+            <ul>
+              <li>              		
+              		 2018/09/21<a  href='http://www.amlo.moj.gov.tw/ct.asp?xItem=491767&amp;ctNode=45749&amp;mp=8004' class='post'> 
+			               	 行政院洗錢防制辦公室製作3份宣導海報，歡迎下載。</a></li>
+              		
+              <li>              		
+              		 2018/09/20<a href='11/newsDetail.do?thetype=2&idx=8997' target="_blank"
+	                	   class='press'> 
+	                	 第4屆「期貨鑽石獎」得獎名單出爐！ 期交所10月25日將盛大舉辦頒...
+              			</a></li>
+              		
+              <li>              		
+              		 2018/09/20<a href='http://www.taifex.com.tw/file/taifex/CHINESE/11/attach/期交所第4屆期貨鑽石獎得獎名單.pdf' target="_blank"
+			               	 	class='post'>
+			               	 公告期交所第4屆期貨鑽石獎得獎名單 </a></li>
+              		
+              <li>              		
+              		 2018/09/20<a  href='http://wisdom.sfi.org.tw' class='post'> 
+			               	 歡迎報名第15屆校園證券投資智慧王-大專院校知識競賽!</a></li>
+              		
+              <li>              		
+              		 2018/09/20<a  href='http://act.twse.com.tw/quiz2018/' class='post'> 
+			               	 證交所舉辦「汪來富 股市旺」網路闖關遊戲，歡迎踴躍參加!</a></li>
+              		
+              <li>              		
+              		 2018/09/19<a  href='http://www.taifex.com.tw/chinese/5/SSFFSP.asp' class='post'> 
+			               	 公告本公司2018年09月份股票期貨與選擇權契約最後結算價</a></li>
+              		
+              </ul>
+          </div>
+        </div>
+        <!-- 201709 red start-->
+        <div class="section clearfix">
+          <div class="stock box">
+            <div class="hd"></div>
+            <div class="bd">
+              <div class="text">
+                <ul>
+                  <li><a href="2/tX" target="_blank">臺股期貨</a></li>
+                  <li><a href="2/mTX" target="_blank">小型臺指期貨</a></li>
+                  <li><a href="2/tXO" target="_blank">臺指選擇權</a></li>
+                  <li><a href="2/sTF" target="_blank">股票期貨</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ft"><a href="indexMore/product1" target="_blank" class="more">More</a></div>
+          </div>
+          <div class="stock2 box">
+            <div class="hd"></div>
+            <div class="bd">
+              <div class="text">
+                <ul>
+                  <li><a href="2/uDF" target="_blank">美國道瓊期貨</a></li>
+                  <li><a href="2/sPF" target="_blank">美國標普500期貨</a></li>
+                  <li><a href="2/tJF" target="_blank">日本東證期貨</a></li>
+                  <li><a href="2/i5F" target="_blank">印度50期貨</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ft"><a href="indexMore/product2" target="_blank"  class="more">More</a></div>
+          </div>
+        </div>
+        <div class="section clearfix">
+          <div class="exchange box">
+            <div class="hd"></div>
+            <div class="bd">
+              <div class="text">
+                <ul>
+                  <li><a href="2/xBF" target="_blank">英鎊兌美元期貨</a></li>
+                  <li><a href="2/xAF" target="_blank">澳幣兌美元期貨</a></li>
+                  <li><a href="2/xEF" target="_blank">歐元兌美元期貨</a></li>
+                  <li><a href="2/xJF" target="_blank">美元兌日圓期貨</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ft"><a href="indexMore/product3" target="_blank"  class="more">More</a></div>
+          </div>
+          <div class="product box">
+            <div class="hd"></div>
+            <div class="bd">
+              <div class="text">
+                <ul>
+                  <li><a href="2/bRF" target="_blank">布蘭特原油期貨</a></li>	
+                  <li><a href="2/gDF" target="_blank">黃金期貨</a></li>
+                  <li><a href="2/tGF" target="_blank">臺幣黃金期貨</a></li>
+                  <li><a href="2/tGO" target="_blank">黃金選擇權</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="ft"><a href="indexMore/product4" target="_blank"  class="more">More</a></div>
+          </div>
+        </div>
+	      <div class="sta box clear">
+	        <div class="hd"></div>
+	        <div class="bd">
+	         <div class="select1">
+	          <ul>
+	            <li class="current"><a id="majorType1" href="#">外資及陸資</a></li>
+	            <li><a id="majorType2" href="#">自營商</a></li>
+	            <li><a id="majorType3" href="#">投信</a></li>
+	          </ul>
+			</div>
+			<div class="select2">
+	          <ul>
+	            <li class="current"><a id="majorDataType1" href="#">交易口數淨額</a></li>
+	            <li><a id="majorDataType2" href="#">未平倉口數淨額</a></li>
+	          </ul>
+			</div>
+				<div class="com">
+					<canvas id="majorBarChar" height="109"></canvas>
+				</div>
+			</div>
+	      </div>
+
+        <!-- 201709 red end-->
+        <div class="act box clear">
+          <div class="hd"></div>
+          <div class="bd"> <img src="/cht/resources/front/cht/images/act_img.jpg" class="img">
+            <div class="text">
+              <ul>
+              <li><a href="https://www.taifex.com.tw/cht/area/visit/visitIndex" target = '_blank' >大專院校參訪線上申請</a></li>
+              <li><a href="https://www.taifex.com.tw/cht/activity/training?activity_id=3118219717000000f0a0c2e814e04891" target = '_blank' >107年度第4季制度調整宣導說明會</a></li>
+              <li><a href="https://www.taifex.com.tw/cht/courses/trains?id=852180BE-BDA0-48B4-86CC-19F308D45DAB" target = '_blank' >107年度第4季交易人期貨及選擇權課程報名</a></li>
+              <li><a href="https://www.taifex.com.tw/cht/area/eLearn/training" target = '_blank' >107年度9月份期貨業從業人員培訓課程報名</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft"><a href="indexMore/teach"  target="_blank" class="more">More</a></div>
+        </div>
+        <div class="section clearfix">        
+          <div class="movie box">
+            <div class="hd"></div>
+            <div class="bd"> <img src="http://www.taifex.com.tw/file/taifex/CHINESE/images/movie_img.jpg" class="img">
+              <div class="text">
+                <ul>
+                  <li>
+                  	<a onmouseout="this.style.color='#37769d'" onmouseover="this.style.color='#ff6600'" style="font-size: 13px; color: rgb(55, 118, 157); font-weight: normal;" 
+                  		href="/file/taifex/event/cht/XAF_XBF/index.html" target="_blank">
+                  		英鎊兌美元匯率期貨及澳幣兌美元匯率期貨
+                  	</a>
+                  </li>
+                  <li>
+                  	<a onmouseout="this.style.color='#37769d'" onmouseover="this.style.color='#ff6600'" style="font-size: 13px; color: rgb(55, 118, 157); font-weight: normal;" 
+                  	href="/file/taifex/event/cht/SPF_UDF/event.html" target="_blank">
+                  	美國道瓊期貨及標普500期貨
+                  	</a>                  	
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="ft"><a href="indexMore/newProducts" target="_blank" class="more">More</a></div>
+          </div>         
+          <div class="study box">
+            <div class="hd"></div>
+            <div class="bd"> <img src="http://www.taifex.com.tw/file/taifex/CHINESE/images/study_img.jpg" class="img">
+              <div class="text">
+                <ul>
+                	<li><a onmouseout="this.style.color='#37769d'" onmouseover="this.style.color='#ff6600'" style="font-size:13px;color:#37769d;font-weight: normal;" 
+                    href="http://www.taifex.com.tw/file/taifex/event/cht/NewthirdMonth/index.html" target="_blank">期貨市場2大制度調整</a></li>
+                    <li><a onmouseout="this.style.color='#37769d'" onmouseover="this.style.color='#ff6600'" style="font-size:13px;color:#37769d;font-weight: normal;" 
+                    href="/file/taifex/event/cht/DynamicPriceBanding/index.html" target="_blank">期貨市場動態價格穩定措施</a></li>
+					<li><a onmouseout="this.style.color='#37769d'" onmouseover="this.style.color='#ff6600'" style="font-size:13px;color:#37769d;font-weight: normal;" 
+					href="/file/taifex/event/cht/AfterHoursTrading/index.html" target="_blank">期貨市場夜盤交易</a></li>		
+												
+				</ul>
+              </div>
+            </div>
+            <div class="ft"><a href="indexMore/taifexMore" target="_blank" class="more">More</a></div>
+          </div>
+        </div>
+      </div>
+      <!--SidebarLeft End-->
+      <!--SidebarRight Start-->
+      <div class="sidebar_right">
+        <!-- 201709 red start-->
+		<div class="box price">
+                <div class="hd day">
+                    <div class="tab1" id="btnProductDay" ><a class="more" href="http://info512.taifex.com.tw/Future/Disclaimer.aspx" target="_blank">more</a></div>
+                    <div class="tab2" id="btnProductNight"><a class="more" href="http://info512ah.taifex.com.tw/Future/Disclaimer.aspx" target="_blank">more</a></div>
+                </div>
+        <div id="productDiv" class="bd"></div>
+      </div>
+        <div class="box trend">
+          <div class="hd"></div>
+          <div class="bd"><canvas id="dayTrendChart" height="102" style="padding:5px 0px 0px 0px"></canvas></div>
+        </div>
+        <div class="box trend_night">
+          <div class="hd"></div>
+          <div class="bd"><canvas id="nightTrendChart" height="102" style="padding:5px 0px 0px 0px"></canvas></div>
+        </div>
+        <div class="box top">
+          <div class="hd"></div>
+          <div class="bd">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr class="color">
+                <th width="40" align="center">序號</th>
+                <th width="80" align="center">商品代號</th>
+                <th align="center">商品名稱</th>
+                <th width="80" align="center">成交量</th>
+              </tr>
+              <tr  >
+	                <td align="center">1</td>
+	                <td align="center">OL</td>
+	                <td align="center">小型大立光期貨</td>
+	                <td align="right">6,170</td>
+	              </tr>
+	              <tr class="color" >
+	                <td align="center">2</td>
+	                <td align="center">LX</td>
+	                <td align="center">國巨期貨</td>
+	                <td align="right">6,055</td>
+	              </tr>
+	              <tr  >
+	                <td align="center">3</td>
+	                <td align="center">HB</td>
+	                <td align="center">華新科期貨</td>
+	                <td align="right">6,022</td>
+	              </tr>
+	              <tr class="color" >
+	                <td align="center">4</td>
+	                <td align="center">CD</td>
+	                <td align="center">台積電期貨</td>
+	                <td align="right">5,549</td>
+	              </tr>
+	              <tr  >
+	                <td align="center">5</td>
+	                <td align="center">NO</td>
+	                <td align="center">中美晶期貨</td>
+	                <td align="right">4,670</td>
+	              </tr>
+	              <tr class="color" >
+	                <td align="center">6</td>
+	                <td align="center">MK</td>
+	                <td align="center">美律期貨</td>
+	                <td align="right">3,892</td>
+	              </tr>
+	              <tr  >
+	                <td align="center">7</td>
+	                <td align="center">NA</td>
+	                <td align="center">穩懋期貨</td>
+	                <td align="right">3,707</td>
+	              </tr>
+	              <tr class="color" >
+	                <td align="center">8</td>
+	                <td align="center">JB</td>
+	                <td align="center">創意期貨</td>
+	                <td align="right">3,392</td>
+	              </tr>
+	              <tr  >
+	                <td align="center">9</td>
+	                <td align="center">JZ</td>
+	                <td align="center">嘉聯益期貨</td>
+	                <td align="right">3,014</td>
+	              </tr>
+	              <tr class="color" >
+	                <td align="center">10</td>
+	                <td align="center">DH</td>
+	                <td align="center">鴻海期貨</td>
+	                <td align="right">2,952</td>
+	              </tr>
+	              </table>
+            <p class="update">統計日期：2018/09/21</p>
+          </div>
+        </div>
+        <!-- 201709 red end-->
+        <div class="banner"><a href="http://www.taifex.com.tw/file/taifex/event/cht/BRF_future/index.html" target="_blank"> <img src="http://www.taifex.com.tw/file/taifex/CHINESE/images/BRT_home.jpg"></a></div>
+      </div>
+      <!--SidebarRight End-->
+      <!--SidebarMiddle Start-->
+      <!--banner輪播區域-->
+      <div class="sidebar_bottom clear clearfix">
+      	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+<style type="text/css">
+        a img {
+                border: none;
+        }
+        #banner1_pic {
+                position: relative;
+                width: 242px;
+                height: 90px;
+                border: 0px solid #ccc;
+        }
+        #banner1_pic a.ad {
+                position: absolute;   /* 讓圖片疊在一起 */
+                z-index:8;
+        }
+        #banner1_pic .control {
+                position: absolute;
+                right: 10px;
+                bottom: 0px;
+                z-index:99;
+        }
+        #banner1_pic .control a {
+                display: inline-block;
+                margin: 0 0px;
+                background:url(images/icon_vi.gif) no-repeat;
+                width:11px; height:0px;
+				color:#fff;
+				font-size:9px;
+				text-align:center;
+        }
+        #banner1_pic .control a.on {
+                background:url(images/icon_vi_c.gif) no-repeat;
+				color:#F90;
+        }
+        #banner1_pic .select{ background:url(/cht/resources/front/images/vision_bottom.png) no-repeat; height:0px; width:242px; position:absolute; top:140px; z-index:50;}
+		
+		
+		#banner2_pic {
+                position: relative;
+                width: 242px;
+                height: 90px;
+                border: 0px solid #ccc;
+        }
+        #banner2_pic a.ad {
+                position: absolute;   /* 讓圖片疊在一起 */
+                z-index:8;
+        }
+        #banner2_pic .control {
+                position: absolute;
+                right: 10px;
+                bottom: 0px;
+                z-index:99;
+        }
+        #banner2_pic .control a {
+                display: inline-block;
+                margin: 0 0px;
+                background:url(images/icon_vi.gif) no-repeat;
+                width:11px; height:0px;
+				color:#fff;
+				font-size:9px;
+				text-align:center;
+        }
+        #banner2_pic .control a.on {
+                background:url(images/icon_vi_c.gif) no-repeat;
+				color:#F90;
+        }
+        #banner2_pic .select{ background:url(/cht/resources/front/images/vision_bottom.png) no-repeat; height:0px; width:242px; position:absolute; top:140px; z-index:50;}
+
+		#banner3_pic {
+                position: relative;
+                width: 242px;
+                height: 90px;
+                border: 0px solid #ccc;
+        }
+        #banner3_pic a.ad {
+                position: absolute;   /* 讓圖片疊在一起 */
+                z-index:8;
+        }
+        #banner3_pic .control {
+                position: absolute;
+                right: 10px;
+                bottom: 0px;
+                z-index:99;
+        }
+        #banner3_pic .control a {
+                display: inline-block;
+                margin: 0 0px;
+                background:url(images/icon_vi.gif) no-repeat;
+                width:11px; height:0px;
+				color:#fff;
+				font-size:9px;
+				text-align:center;
+        }
+        #banner3_pic .control a.on {
+                background:url(images/icon_vi_c.gif) no-repeat;
+				color:#F90;
+        }
+        #banner3_pic .select{ background:url(/cht/resources/front/cht/resources/images/vision_bottom.png) no-repeat; height:0px; width:242px; position:absolute; top:140px; z-index:50;}		
+
+        #banner4_pic {
+                position: relative;
+                width: 242px;
+                height: 90px;
+                border: 0px solid #ccc;
+        }
+        #banner4_pic a.ad {
+                position: absolute;   /* 讓圖片疊在一起 */
+                z-index:8;
+        }
+        #banner4_pic .control {
+                position: absolute;
+                right: 10px;
+                bottom: 0px;
+                z-index:99;
+        }
+        #banner4_pic .control a {
+                display: inline-block;
+                margin: 0 0px;
+                background:url(images/icon_vi.gif) no-repeat;
+                width:11px; height:0px;
+				color:#fff;
+				font-size:9px;
+				text-align:center;
+        }
+        #banner4_pic .control a.on {
+                background:url(images/icon_vi_c.gif) no-repeat;
+				color:#F90;
+        }
+        #banner4_pic .select{ background:url(/cht/resources/front/cht/resources/images/vision_bottom.png) no-repeat; height:0px; width:242px; position:absolute; top:140px; z-index:50;}
+		
+				
+</style>
+<script type="text/javascript">
+	$(function(){
+		var $block = $('#banner1_pic'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 2000,	// 淡出的速度
+			fadeInSpeed = 3000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2000;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $controlA = $('#banner1_pic').append($('<div class="select fixpng" style="display:none"><div class="control">' + str + '</div></div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+		
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+		var $block = $('#banner3_pic'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 2000,	// 淡出的速度
+			fadeInSpeed = 3000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2000;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $controlA = $('#banner3_pic').append($('<div class="select fixpng" style="display:none"><div class="control">' + str + '</div></div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+		
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+		var $block = $('#banner2_pic'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 2000,	// 淡出的速度
+			fadeInSpeed = 3000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2000;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $controlA = $('#banner2_pic').append($('<div class="select fixpng" style="display:none"><div class="control">' + str + '</div></div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+		
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+		var $block = $('#banner4_pic'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 2000,	// 淡出的速度
+			fadeInSpeed = 3000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2000;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $controlA = $('#banner4_pic').append($('<div class="select fixpng" style="display:none"><div class="control">' + str + '</div></div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+		
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);
+	});
+</script>	
+
+<div class="left">
+    	<div id="banner1_pic" class="vision">   
+    	 <a 
+    	 		
+               	    href="https://www.taifex.com.tw/CHINESE/csr/index.html"
+               	  target = "_blank"    class="ad">
+    	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/bottom-banner-1.jpg" />
+    	 	</a> 
+    	 </div>
+    </div>
+<div class="leftA">
+	<div id="banner3_pic" class="vision">  
+	<a 
+  	 		
+             	    href="http://www.taifex.com.tw/chinese/activity/list.aspx"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/taifex_activity.jpg" />
+  	 	</a> 
+		
+    <a 
+  	 		
+             	    href="http://taifex.learn.hinet.net"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/online_learning.jpg" />
+  	 	</a> 
+		
+    </div>
+</div>
+ <div class="right">
+	<div id="banner2_pic" class="vision">   
+	<a 
+  	 		
+             	 	href="/cht/../file/taifex/event/cht/2017Q1/event.html"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/2017Q1.jpg" />
+  	 	</a> 
+    	 </div>
+    </div>   
+<div class="rightA">
+	<div id="banner4_pic" class="vision">
+	<a 
+  	 		
+             	    href="https://www.taifex.com.tw/chinese/event/event_20181025/Index.aspx"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/107ceo.jpg" />
+  	 	</a> 
+    	 </div>
+</div>  </div>
+       <div class="sidebar_bottomA">
+       <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+<style type="text/css">
+        a img {
+                border: none;
+        }
+        #banner1_pic_2 {
+                position: relative;
+                width: 242px;
+                height: 90px;
+                border: 0px solid #ccc;
+        }
+        #banner1_pic_2 a.ad {
+                position: absolute;   /* 讓圖片疊在一起 */
+                z-index:8;
+        }
+        #banner1_pic_2 .control {
+                position: absolute;
+                right: 10px;
+                bottom: 0px;
+                z-index:99;
+        }
+        #banner1_pic_2 .control a {
+                display: inline-block;
+                margin: 0 0px;
+                background:url(images/icon_vi.gif) no-repeat;
+                width:11px; height:0px;
+				color:#fff;
+				font-size:9px;
+				text-align:center;
+        }
+        #banner1_pic_2 .control a.on {
+                background:url(images/icon_vi_c.gif) no-repeat;
+				color:#F90;
+        }
+        #banner1_pic_2 .select{ background:url(/cht/resources/front/images/vision_bottom.png) no-repeat; height:0px; width:242px; position:absolute; top:140px; z-index:50;}
+		
+		
+		#banner2_pic_2 {
+                position: relative;
+                width: 242px;
+                height: 90px;
+                border: 0px solid #ccc;
+        }
+        #banner2_pic_2 a.ad {
+                position: absolute;   /* 讓圖片疊在一起 */
+                z-index:8;
+        }
+        #banner2_pic_2 .control {
+                position: absolute;
+                right: 10px;
+                bottom: 0px;
+                z-index:99;
+        }
+        #banner2_pic_2 .control a {
+                display: inline-block;
+                margin: 0 0px;
+                background:url(images/icon_vi.gif) no-repeat;
+                width:11px; height:0px;
+				color:#fff;
+				font-size:9px;
+				text-align:center;
+        }
+        #banner2_pic_2 .control a.on {
+                background:url(images/icon_vi_c.gif) no-repeat;
+				color:#F90;
+        }
+        #banner2_pic_2 .select{ background:url(/cht/resources/front/images/vision_bottom.png) no-repeat; height:0px; width:242px; position:absolute; top:140px; z-index:50;}
+
+		#banner3_pic_2 {
+                position: relative;
+                width: 242px;
+                height: 90px;
+                border: 0px solid #ccc;
+        }
+        #banner3_pic_2 a.ad {
+                position: absolute;   /* 讓圖片疊在一起 */
+                z-index:8;
+        }
+        #banner3_pic_2 .control {
+                position: absolute;
+                right: 10px;
+                bottom: 0px;
+                z-index:99;
+        }
+        #banner3_pic_2 .control a {
+                display: inline-block;
+                margin: 0 0px;
+                background:url(images/icon_vi.gif) no-repeat;
+                width:11px; height:0px;
+				color:#fff;
+				font-size:9px;
+				text-align:center;
+        }
+        #banner3_pic_2 .control a.on {
+                background:url(images/icon_vi_c.gif) no-repeat;
+				color:#F90;
+        }
+        #banner3_pic_2 .select{ background:url(/cht/resources/front/images/vision_bottom.png) no-repeat; height:0px; width:242px; position:absolute; top:140px; z-index:50;}		
+
+        #banner4_pic_2 {
+                position: relative;
+                width: 242px;
+                height: 90px;
+                border: 0px solid #ccc;
+        }
+        #banner4_pic_2 a.ad {
+                position: absolute;   /* 讓圖片疊在一起 */
+                z-index:8;
+        }
+        #banner4_pic_2 .control {
+                position: absolute;
+                right: 10px;
+                bottom: 0px;
+                z-index:99;
+        }
+        #banner4_pic_2 .control a {
+                display: inline-block;
+                margin: 0 0px;
+                background:url(images/icon_vi.gif) no-repeat;
+                width:11px; height:0px;
+				color:#fff;
+				font-size:9px;
+				text-align:center;
+        }
+        #banner4_pic_2 .control a.on {
+                background:url(images/icon_vi_c.gif) no-repeat;
+				color:#F90;
+        }
+        #banner4_pic_2 .select{ background:url(/cht/resources/front/images/vision_bottom.png) no-repeat; height:0px; width:242px; position:absolute; top:140px; z-index:50;}
+		
+				
+</style>
+<script type="text/javascript">
+	$(function(){
+		var $block = $('#banner1_pic_2'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 2000,	// 淡出的速度
+			fadeInSpeed = 3000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2000;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $controlA = $('#banner1_pic_2').append($('<div class="select fixpng" style="display:none"><div class="control">' + str + '</div></div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+		
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+		var $block = $('#banner3_pic_2'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 2000,	// 淡出的速度
+			fadeInSpeed = 3000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2000;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $controlA = $('#banner3_pic_2').append($('<div class="select fixpng" style="display:none"><div class="control">' + str + '</div></div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+		
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+		var $block = $('#banner2_pic_2'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 2000,	// 淡出的速度
+			fadeInSpeed = 3000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2000;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $controlA = $('#banner2_pic_2').append($('<div class="select fixpng" style="display:none"><div class="control">' + str + '</div></div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+		
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);
+	});
+</script>
+<script type="text/javascript">
+	$(function(){
+		var $block = $('#banner4_pic_2'), 
+			$ad = $block.find('.ad'),
+			showIndex = 0,			// 預設要先顯示那一張
+			fadeOutSpeed = 2000,	// 淡出的速度
+			fadeInSpeed = 3000,		// 淡入的速度
+			defaultZ = 10,			// 預設的 z-index
+			isHover = false,
+			timer, speed = 2000;	// 計時器及輪播切換的速度
+		
+		// 先把其它圖片的變成透明
+		$ad.css({
+			opacity: 0,
+			zIndex: defaultZ - 1
+		}).eq(showIndex).css({
+			opacity: 1,
+			zIndex: defaultZ
+		});
+		
+		// 組出右下的按鈕
+		var str = '';
+		for(var i=0;i<$ad.length;i++){
+			str += '<a href="#">' + (i + 1) + '</a>';
+		}
+		var $controlA = $('#banner4_pic_2').append($('<div class="select fixpng" style="display:none"><div class="control">' + str + '</div></div>').css('zIndex', defaultZ + 1)).find('.control a');
+
+		// 當按鈕被點選時
+		// 若要變成滑鼠滑入來切換時, 可以把 click 換成 mouseover
+		$controlA.click(function(){
+			// 取得目前點擊的號碼
+			showIndex = $(this).text() * 1 - 1;
+			
+			// 顯示相對應的區域並把其它區域變成透明
+			$ad.eq(showIndex).stop().fadeTo(fadeInSpeed, 1, function(){
+				if(!isHover){
+					// 啟動計時器
+					timer = setTimeout(autoClick, speed);
+				}
+			}).css('zIndex', defaultZ).siblings('a').stop().fadeTo(fadeOutSpeed, 0).css('zIndex', defaultZ - 1);
+			// 讓 a 加上 .on
+			$(this).addClass('on').siblings().removeClass('on');
+
+			return false;
+		}).focus(function(){
+			$(this).blur();
+		}).eq(showIndex).addClass('on');
+
+		$block.hover(function(){
+			isHover = true;
+			// 停止計時器
+			clearTimeout(timer);
+		}, function(){
+			isHover = false;
+			// 啟動計時器
+			timer = setTimeout(autoClick, speed);
+		})
+		
+		// 自動點擊下一個
+		function autoClick(){
+			if(isHover) return;
+			showIndex = (showIndex + 1) % $controlA.length;
+			$controlA.eq(showIndex).click();
+		}
+		
+		// 啟動計時器
+		timer = setTimeout(autoClick, speed);
+	});
+</script>
+ <div class="left">
+	<div id="banner1_pic_2" class="vision">   
+		<a 
+  	 		
+             	    href="http://info512.taifex.com.tw/Future/SPRMBIndex_Norl.aspx"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/sp_taifex_rmb_index_ch.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	 	href="/cht/../file/taifex/event/cht/taifex/index.html"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/taifex.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	 	href="/cht/../file/taifex/event/cht/download/download.html"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/bottom-banner-2.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	    href="http://www.taifex.com.tw/file/taifex/event/cht/money_laundering/index.html"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/moneywash0627.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	 	href="/cht/../cht/area/procurement"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/bottom-banner-7-2.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	    href="https://youtu.be/G_ertrlmAtw"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/sellticket.jpg" />
+  	 	</a> 
+		</div>
+</div>
+<div class="leftA">
+	<div id="banner3_pic_2" class="vision">
+		<a 
+  	 		
+             	 	href="/cht/../file/taifex/event/cht/HistoricalData/type_01.html"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/hdata01.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	 	href="/cht/../file/taifex/event/enl/DBAG/event.html"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/dbag_c.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	    href="http://service.tabf.org.tw/tw/user/251452/"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/tabf251452.jpg" />
+  	 	</a> 
+		</div>
+    </div>
+ <div class="right">
+	<div id="banner2_pic_2" class="vision">
+		<a 
+  	 		
+             	 	href="/cht/../file/taifex/event/cht/train1050304/event.html"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/20160304.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	 	href="/cht/../file/taifex/CHINESE/event/獎助辦法及附件.rar"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/20170303.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	 	href="/cht/../file/taifex/event/cht/FOW/index_flow.html"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/fow-icon.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	 	href="/cht/../file/taifex/event/cht/TAB/index.html"		                	 	 
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/TAB.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	    href="http://sim.taifex.com.tw/sim/"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/bottom-banner-4.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	    href="http://webline.sfi.org.tw/workshop/default.asp?s=346"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/sfi-300.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	    href="http://info512.taifex.com.tw/"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/bottom-banner-3.jpg" />
+  	 	</a> 
+		<a 
+  	 		
+             	    href="http://www.taifex.com.tw/chinese/event/1998.asp"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/bottom-banner-8.jpg" />
+  	 	</a> 
+		</div>
+</div>   	
+ <div class="rightA">
+	<div id="banner4_pic_2" class="vision">
+		<a 
+  	 		
+             	    href="http://www.taifex.com.tw/cht/indexMore/bannerAll"
+             	  target = "_blank"    class="ad">
+  	 		<img border="0" width="242" height="100" src="http://www.taifex.com.tw/file/taifex/CHINESE/pic_banners/bottomleft/static_banner.jpg" />
+  	 	</a> 
+		</div>
+</div></div>
+      
+      <!--SidebarMiddle End-->
+    </div>
+    <!--Container End-->
+    <div class="popBulletin">
+        <div class="com">
+            <div class="bt_close"></div>
+            <h1>臺灣期貨交易所網站換版公告</h1>
+            <ol>
+                <li>1. 本公司為提昇網站服務品質，現己完成網站改版。若您還需使用舊版網站可參考以下連結:</li>
+                <li><a href="http://www.taifex.com.tw/chinese/index.asp">http://www.taifex.com.tw/chinese/index.asp</a></li>
+                <li>2. 本公司預計舊版網站繼續提供服務至10月1日下午5點為止。若此次網站改版造成您的任何不便，敬請見諒！</li>
+                <li>3. 本公司新版網站相關問題或任何建議，歡迎您email至<a href="mailto:lingyu@taifex.com.tw">lingyu@taifex.com.tw</a></li>
+            </ol>
+        </div>
+    </div>
+<script language="JavaScript" type="text/JavaScript">
+
+    // 預設顯示日盤商品行情表
+    //$("#productDiv").html(getProductDayHtml());
+
+    function clockproductclear()
+    {
+        clearInterval(clockproduct);
+        clearInterval(clockproductstop);
+    }
+	
+clockproductgo();
+</script>
+
+<script type="text/javascript">
+
+	
+  var tradeDate = new Date(); 
+  var timeStart = new Date();
+  var reflashSeconds = 40;
+  timeStart.setHours(00,00,00);
+  
+  var timeEnd = new Date(); 
+  timeEnd.setHours(23,59,00);
+
+ 
+
+  if (tradeDate >=timeStart && tradeDate <= timeEnd ) {
+	  var diff = timeEnd - tradeDate;
+	  var secs = Math.floor(diff/1000);
+	  
+	  var clockproduct = window.setInterval("clockproductgo()", reflashSeconds * 1000);
+	  var clockproductstop = window.setInterval("clockproductclear()", secs * 1000);
+  } else if (tradeDate < timeStart) {
+	  var diff = timeEnd - timeStart;
+		var secs = Math.floor(diff/1000);
+	  function clockproductrestart()
+		{
+			clockproductgo();
+			clearInterval(clockproduct);
+			clockproduct = window.setInterval("clockproductgo()", reflashSeconds * 1000);
+			clockproductstop = window.setInterval("clockproductclear()", secs * 1000);
+		}
+	var clockproduct = window.setInterval("clockproductrestart()", secs * 1000);
+	var clockproductstop;
+  }
+
+  
+</script>
+<script language="JavaScript" type="text/JavaScript">
+
+
+    function clockchartimageclear()
+{
+	clearInterval(clockchartimage);
+	clearInterval(clockchartimagestop);
+}
+	
+  
+</script>
+
+
+<script type="text/javascript">
+
+	
+  var tradeDate = new Date(); 
+  var timeStart = new Date();
+  var reflashSeconds = 60;
+  timeStart.setHours(00,00,00);
+  
+  var timeEnd = new Date(); 
+  timeEnd.setHours(23,59,00);
+
+ 
+
+  if (tradeDate >=timeStart && tradeDate <= timeEnd ) {
+	  var diff = timeEnd - tradeDate;
+	  var secs = Math.floor(diff/1000);
+	  
+	  var clockchartimage = window.setInterval("clockchartimagego()", reflashSeconds * 1000);
+	  var clockchartimagestop = window.setInterval("clockchartimageclear()", secs * 1000);
+  } else if (tradeDate < timeStart) {
+	  var diff = timeEnd - timeStart;
+		var secs = Math.floor(diff/1000);
+	  function clockchartimagerestart()
+		{
+		  clockchartimagego();
+			clearInterval(clockproduct);
+			clockchartimage = window.setInterval("clockchartimagego()", reflashSeconds * 1000);
+			clockchartimagestop = window.setInterval("clockproductclear()", secs * 1000);
+		}
+	var clockchartimage = window.setInterval("clockchartimagerestart()", secs * 1000);
+	var clockchartimagestop;
+  }
+
+</script>
+ <script language="JavaScript" type="text/JavaScript">
+
+
+    function clockchartimageNightclear()
+{
+	clearInterval(clockchartimage);
+	clearInterval(clockchartimagestop);
+}
+	
+  
+</script>
+<script type="text/javascript">
+
+	
+  var tradeDate = new Date(); 
+  var timeStart = new Date();
+  var reflashSeconds = 60;
+  timeStart.setHours(00,00,00);
+  
+  var timeEnd = new Date(); 
+  timeEnd.setHours(23,59,00);
+
+ 
+
+  if (tradeDate >=timeStart && tradeDate <= timeEnd ) {
+	  var diff = timeEnd - tradeDate;
+	  var secs = Math.floor(diff/1000);
+	  
+	  var clockchartimage = window.setInterval("clockchartimageNightGo()", reflashSeconds * 1000);
+	  var clockchartimagestop = window.setInterval("clockchartimageNightclear()", secs * 1000);
+  } else if (tradeDate < timeStart) {
+	  var diff = timeEnd - timeStart;
+		var secs = Math.floor(diff/1000);
+	  function clockchartimageNightrestart()
+		{
+		  clockchartimagego();
+			clearInterval(clockproduct);
+			clockchartimage = window.setInterval("clockchartimageNightGo()", reflashSeconds * 1000);
+			clockchartimagestop = window.setInterval("clockchartimageNightclear()", secs * 1000);
+		}
+	var clockchartimage = window.setInterval("clockchartimageNightrestart()", secs * 1000);
+	var clockchartimagestop;
+  }
+
+</script>
+ <script type="text/javascript">
+      $(".bt_close").click(function() {
+    	  ajaxPopBulletin('closed');
+        $(".popBulletin").fadeOut("slow");
+      });
+      
+      function ajaxPopBulletin(isClosed){
+    	 
+    		$.post('ajaxPopBulletin',{isClosed:isClosed},function(data){
+    			
+    			if (data) {
+    				$(".popBulletin").hide();
+    			} 
+    		});
+    	}
+      $(document).ready(function(){
+    	  ajaxPopBulletin();
+  	});
+      
+    </script>
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW">
+
+<!--Footer Start-->
+    <div class="fat-footer">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td width="20%" align="left" valign="top">
+		              	    	<a  class="m-one" href="/cht/3/totalTableDate" title='交易資訊'  />
+		              	    		交易資訊</a>
+		              	    </td>              	 			                	 	 
+		              	 <td width="20%" align="left" valign="top">
+		              	    	<a  class="m-one" href="/cht/4/marketFramework" title='交易制度'  />
+		              	    		交易制度</a>
+		              	    </td>              	 			                	 	 
+		              	 <td width="20%" align="left" valign="top">
+		              	    	<a  class="m-one" href="/cht/5/clearing" title='結算業務'  />
+		              	    		結算業務</a>
+		              	    </td>              	 			                	 	 
+		              	 <td width="20%" align="left" valign="top">
+		              	    	<a  class="m-one" href="/cht/7/annualTrading" title='統計資料'  />
+		              	    		統計資料</a>
+		              	    </td>              	 			                	 	 
+		              	 <td width="20%" align="left" valign="top">
+		              	    	<a  class="m-one" href="/cht/11/announcement" title='最新消息'  />
+		              	    		最新消息</a>
+		              	    </td>              	 			                	 	 
+		              	 </tr>
+          <tr>           
+            	
+            	<td width="20%" align="left" valign="top">
+            		<div class="footer_list">
+						<ul>
+            			<li><a  class="m-two" href="/cht/3/futDailyMarketReport" title='交易資訊'/>交易資訊</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/3/totalTableDate" title='三大法人'/>三大法人</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/3/largeTraderFutQry" title='大額交易人未沖銷部位結構'/>大額交易人未沖銷部位結構</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/3/dailyFXRate" title='每日外幣參考匯率查詢'  />每日外幣參考匯率查詢</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/3/hisAppForm" title='交易歷史資料申請'  />交易歷史資料申請</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/3/dlFutDailyMarketView" title='資料下載專區'/>資料下載專區</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/3/inforVendor" title='資訊廠商'/>資訊廠商</a></li>		                	 	 
+			                	 <li><a target="_blank" class="m-two" href="http://info512.taifex.com.tw"  title='台灣期貨交易所行情資訊網站' />台灣期貨交易所行情資訊網站</a></li>
+			                	 <li><a  class="m-two" href="/cht/3/tradeHalt" title='訊息面暫停交易之股票期貨及選擇權'  />訊息面暫停交易之股票期貨及選擇權</a></li>		                	 	 
+			                	 </ul>
+			              </div>
+			               </td>
+            	<td width="20%" align="left" valign="top">
+            		<div class="footer_list">
+						<ul>
+            			<li><a  class="m-two" href="/cht/4/marketFramework" title='交易制度'/>交易制度</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/4/feeSchedules" title='費率表'/>費率表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/4/tradingSystem" title='電子交易系統'  />電子交易系統</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/4/traderPL" title='部位限制'/>部位限制</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/4/fCMList" title='期貨商名冊'/>期貨商名冊</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/4/calendar" title='行事曆'  />行事曆</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/4/contractAdj" title='股票期貨/選擇權契約相關資訊'/>股票期貨/選擇權契約相關資訊</a></li>		                	 	 
+			                	 </ul>
+			              </div>
+			               </td>
+            	<td width="20%" align="left" valign="top">
+            		<div class="footer_list">
+						<ul>
+            			<li><a  class="m-two" href="/cht/5/clrProcess" title='結算制度'/>結算制度</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/5/indexMarging" title='保證金'/>保證金</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/5/safeGuardSystem" title='財務安全保衛系統'  />財務安全保衛系統</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/5/cMCriteria" title='結算會員資格標準'/>結算會員資格標準</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/5/cMList2" title='結算會員名冊'  />結算會員名冊</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/5/positionManagement" title='部位管理'  />部位管理</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/5/futIndxFSP" title='最後結算價一覽表'/>最後結算價一覽表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/5/futIndxPosSettled" title='到期契約履約交割說明'/>到期契約履約交割說明</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/5/settledBond" title='可交割債券轉換因子表'  />可交割債券轉換因子表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/4/feeSchedules?menuid1=05" title='費率表'/>費率表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/5/productsExemptedAH" title='盤後交易時段指定豁免及非豁免代為沖銷商品'  />盤後交易時段指定豁免及非豁免代為沖銷商品</a></li>		                	 	 
+			                	 </ul>
+			              </div>
+			               </td>
+            	<td width="20%" align="left" valign="top">
+            		<div class="footer_list">
+						<ul>
+            			<li><a  class="m-two" href="/cht/7/dailyFCM" title='期貨商交易量日報表'  />期貨商交易量日報表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/7/weeklyFCM" title='期貨商交易量週報表'  />期貨商交易量週報表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/7/monthlyFCM" title='期貨商交易量月報表'  />期貨商交易量月報表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/7/yearlyFCM" title='期貨商交易量年報表'  />期貨商交易量年報表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/7/annualTrading" title='各商品年成交量統計表'  />各商品年成交量統計表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/7/marketParticipant" title='市場參與者統計'  />市場參與者統計</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/7/tradingVolume" title='各類交易人各商品交易量統計表'  />各類交易人各商品交易量統計表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/7/brokerAndDealer" title='經紀、自營商交易量統計表'  />經紀、自營商交易量統計表</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/7/tradingParticipant" title='各類交易人交易量統計表'  />各類交易人交易量統計表</a></li>		                	 	 
+			                	 <li><a target="_blank" class="m-two" href="/cht/../file/taifex/CHINESE/7/trade_volume.xls" title='前一月份各商品每日交易量統計表 '  />前一月份各商品每日交易量統計表 </a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/7/vixMinNew" title='臺指選擇權波動率指數下載'/>臺指選擇權波動率指數下載</a></li>		                	 	 
+			                	 <li><a target="_blank" class="m-two" href="http://info512.taifex.com.tw/Future/VIXQuote_Norl.aspx"  title='臺指選擇權波動率指數即時行情' />臺指選擇權波動率指數即時行情</a></li>
+			                	 <li><a  class="m-two" href="/cht/7/dailyIndOptChgData" title='加值資料集'/>加值資料集</a></li>		                	 	 
+			                	 </ul>
+			              </div>
+			               </td>
+            	<td width="20%" align="left" valign="top">
+            		<div class="footer_list">
+						<ul>
+            			<li><a  class="m-two" href="/cht/11/announcement" title='公告'  />公告</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/11/pressRelease" title='新聞稿'  />新聞稿</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/11/adjustContract" title='股票期貨/選擇權契約調整'  />股票期貨/選擇權契約調整</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/11/hisNews" title='歷史資料區'  />歷史資料區</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/11/dailyMarketInfo" title='每日市場資訊'  />每日市場資訊</a></li>		                	 	 
+			                	 <li><a  class="m-two" href="/cht/11/RSS0" title='RSS資訊訂閱服務'  />RSS資訊訂閱服務</a></li>		                	 	 
+			                	 </ul>
+			              </div>
+			               </td>
+            	</tr>
+        </tbody>
+      </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#004ea2">
+        <tbody>
+          <tr>
+            <td width="3%" align="left" valign="top"></td>
+            <td width="68%" align="left" valign="middle"><span class="sublink"> 
+	            	<a href="/cht/edu/privacy" target="_blank" class="link-a" title="隱私權保護說明"><font color="white">隱私權保護說明</font></a>| 
+	            	<a href="/cht/edu/userTerms" target="_blank" class="link-a" title="使用條款"><font color="white">使用條款</font></a>| 
+	            	<a href="/cht/edu/trademark" target="_blank" class="link-a" title="商標專區"><font color="white">商標專區</font></a>|
+	            	<a href="http://www.taifex.com.tw/file/taifex/CHINESE/isp.pdf" class="link-a" title="資訊安全政策宣言" target="_blank"><font color="white">資訊安全政策宣言</font></a>| 
+	            	<a href="/cht/11/RSS0" target="_blank" class="link-a" title="RSS專區"><font color="white">RSS專區</font></a>| <a href="/cht/9/futuresQA" target="_blank" class="link-a" title="常見問題"><font color="white">常見問題</font></a>| 
+	            	<a href="http://www8.www.gov.tw/policy/2009career/" target="_blank" class="link-a" title="就業資訊"><font color="white">就業資訊</font></a> </span>
+	            </td>
+	       	<td width="29%" align="left" valign="middle"><span class="sublink"> </span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer clearfix">
+      <div class="copyright">臺灣期貨交易所 Taiwan Futures Exchange 100 臺北市羅斯福路二段100號14樓
+        <br> Tel: (02) 2369-5678 Fax: (02) 2365-7272&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="/cht/edu/service">服務信箱(service@taifex.com.tw)</a>
+        <br> 臺灣期貨交易所 免付費服務專線：0800-075-566 &nbsp;&nbsp;&nbsp;&nbsp;螢幕解析度建議：1024X768 </div>
+      <div class="qrcode"><a href="/mCht/mIndex"></a></div>
+      <div class="phone"><a href='/mCht/mIndex'></a></div>
+    </div>  
+    <!--Footer End-->
+    <div class="popupbox" id="div_popupbox" style="display:none;">
+    <input type="hidden" id="popupbox_url" >
+    <div class="popup_bg"> <img src="/cht/resources/front/cht/images/spacer.gif"></div>
+    <div class="popup">
+      <div class="content" style=" margin:200px auto;">
+        <div class="hd"></div>
+        <div class="bd">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="table_b">
+            <tr>
+              <th id="popupbox_title"></th>
+            </tr>
+            <tr>
+              <td align="center" id="popupbox_comment">
+                <br>
+              </td>
+            </tr>
+            <tr class="ft">
+              <td>
+              <input type="button" name="button" id="button" value="確定" class="btn_orange" onclick="javascript:popup_ok();">
+               		<input type="submit" name="button2" id="button2" value="取消" class="btn_orange" onclick="javascript:popup_close();">
+              	</td>
+            </tr>
+          </table>
+        </div>
+        <div class="ft"></div>
+      </div>
+    </div>
+  </div>
+      <script language="javascript">
+	function popup_ok(){
+		window.open(document.getElementById("popupbox_url").value);
+		popup_close();
+	}
+	function popup_close(){
+		document.getElementById("div_popupbox").style.display = "none";
+	}
+	</script>
+  
+  </div>
+  <div class="popupbox" style="display:none;">
+    <div class="popup_bg"> <img src="/cht/resources/front/cht/images/spacer.gif"></div>
+    <div class="popup">
+      <div class="content" style=" margin:200px auto;">
+        <div class="hd"></div>
+        <div class="bd">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="table_b">
+            <tr>
+              <th></th>
+            </tr>
+            <tr>
+              <td align="center">
+                <br>
+              </td>
+            </tr>
+            <tr class="ft">
+              <td>
+                <input type="submit" name="button" id="button" value="確定" class="btn_orange">
+                <input type="submit" name="button2" id="button2" value="取消" class="btn_orange">
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="ft"></div>
+      </div>
+    </div>
+  </div>
+ 
+  </body>
+</html>
